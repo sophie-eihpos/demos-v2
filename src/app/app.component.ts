@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'saa-app',
+  encapsulation: ViewEncapsulation.None, // turns of shadowdom emulation, the style will apply everywhere
   template: `
       <header>
           <h1>Styling Angular Applications</h1>
